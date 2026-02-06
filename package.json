@@ -25,6 +25,9 @@
   "files": [
     "index.js"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
