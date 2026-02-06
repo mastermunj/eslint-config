@@ -1,0 +1,50 @@
+{
+  "name": "@mastermunj/eslint-config",
+  "version": "0.0.0",
+  "description": "The base configuration for ESLint used by my packages",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "prettier",
+    "unicorn",
+    "stylistic"
+  ],
+  "homepage": "https://github.com/mastermunj/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/mastermunj/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastermunj/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Munjal Dhamecha",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "release": "commit-and-tag-version",
+    "release:mock": "npm run release -- --dry-run"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "commit-and-tag-version": "^12.6.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "typescript-eslint": "^8.54.0"
+  }
+}
